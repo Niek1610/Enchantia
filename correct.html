@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+
+      body {
+        padding: 0px;
+        margin: 0;
+        background-color: white;
+        text-align: center;
+        height: 80vh;
+        width: 100vw;
+      }
+
+      #backbtn {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-image: url(bestanden/backbuttonpng.png);
+        background-size: cover;
+        top: 2.5%;
+        left: 5%;
+      }
+
+
+
+      .header {
+        height: 150px;
+        background-color: aqua;
+        width: 100%;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url(bestanden/pardoesfoto.jpeg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      .logo img {
+        width: 25%;
+        text-align: center;
+      }
+
+      .logo {
+        text-align: center;
+        margin-top: 10%;
+      }
+
+      nav {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        bottom: 0;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        color: #bfbfbf;
+        font-size: 12px;
+      }
+
+      nav img {
+        width: 35px;
+        height: 35px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      nav div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        margin-top: 10%;
+        font-family: FF Ernestine;
+      }
+
+      #okbtn {
+        margin-top: 10%;
+        width: 100px;
+        height: 50px;
+        background-color: #b71234;
+        border-radius: 10px;
+        border-style: none;
+        color: white;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="backbtn" onclick="history.back()"></div>
+    <div class="header"></div>
+    <div class="logo"><img src="bestanden/efteling-logo.png" alt="" /></div>
+
+    <h1>Goed gedaan!</h1>
+
+    <h1 id="xpunten">Je krijgt X punten</h1>
+
+    <a href="index.html"> <button id="okbtn">OK</button></a>
+
+    <nav>
+      <div id="kaart">
+        <a href=""></a
+        ><img src="bestanden/kaarticon.png" alt="" />Kaart
+      </div>
+      <div id="overnachten">
+        <a href=""></a
+        ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+      </div>
+      <div id="raadsel">
+        <a href="index.html"></a
+        ><img src="bestanden/raadselgrijs.png" alt="" />Raadsels
+      </div>
+      <div id="tickets">
+        <a href=""></a
+        ><img src="bestanden/ticketicon.png" alt="" />Tickets
+      </div>
+      <div id="Account">
+        <a href=""></a
+        ><img src="bestanden/meericon.png" alt="" />Account
+      </div>
+    </nav>
+    <script src="points.js"></script>
+    
+  </body>
+</html>

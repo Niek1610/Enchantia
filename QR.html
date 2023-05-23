@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <script src="./node_modules/html5-qrcode/html5-qrcode.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js"
+      integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>QR scanner</title>
+
+
+  <style>
+     @font-face {
+        font-family: eftelingP;
+        src: url(bestanden/fonts/Ledger/Ledger-Regular.ttf);
+      }
+
+      @font-face {
+      font-family: "FF Ernestine";
+      src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot");
+      src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot?#iefix")
+          format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff2")
+          format("woff2"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff")
+          format("woff"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.ttf")
+          format("truetype"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.svg#FF Ernestine")
+          format("svg");
+    }
+
+      h1{
+        margin-top: 10%;
+        text-align: center;
+        font-size: 25px;
+        font-family: FF Ernestine;
+      }
+
+
+    body {
+      margin: 0%;
+      padding: 0%;
+      background-color: #FAFBF6;
+    }
+
+    #reader {
+      margin-top: 35%;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    nav {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 10px;
+      bottom: 0;
+      position: fixed;
+      height: 60px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      color: #bfbfbf;
+      font-size: 12px;
+    }
+
+    
+
+    nav img {
+      width: 35px;
+      height: 35px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    nav div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #backbtn {
+      height: 50px;
+      width: 50px;
+      position: fixed;
+      top: 2.5%;
+      left: 5%;
+      background-image: url(bestanden/backbuttonpng.png);
+      background-size: cover;
+    }
+  </style>
+    </head>
+  <body id="QR">
+    <div id="backbtn" onclick="history.back()"></div>
+
+    <main>
+      <div id="reader"></div>
+    </main>
+
+    <nav>
+      <div id="kaart">
+        <a href=""></a
+        ><img src="bestanden/kaarticon.png" alt="" />Kaart
+      </div>
+      <div id="overnachten">
+        <a href=""></a
+        ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+      </div>
+      <div id="raadsel">
+        <a href="index.html"><img src="bestanden/raadselgrijs.png" alt="" /></a
+        >Raadsels
+      </div>
+      <div id="tickets">
+        <a href=""></a
+        ><img src="bestanden/ticketicon.png" alt="" />Tickets
+      </div>
+      <div id="Account">
+        <a href=""></a
+        ><img src="bestanden/meericon.png" alt="" />Account
+      </div>
+    </nav>
+
+    <script>
+      let raadsels = JSON.parse(localStorage.getItem("raadsels")) || [
+        "raadsel1.html",
+        "raadsel2.html",
+        "raadsel3.html",
+      ];
+      
+      
+
+      const html5QrCode = new Html5Qrcode("reader");
+
+        // Start scanning
+        html5QrCode.start(
+          { facingMode: "environment" }, 
+          { fps: 10, qrbox: 250 }, 
+          qrCodeMessage => {
+            // Check if the decoded message is equal to "raadsel"
+            if (qrCodeMessage === "raadsel") {
+              // Do something if the decoded message is "raadsel"
+              if (raadsels.length === 0) {
+                raadsels = ["raadsel1.html", "raadsel2.html", "raadsel3.html"];
+              }
+
+              let randomIndex = Math.floor(Math.random() * raadsels.length);
+              let randomRaadsel = raadsels[randomIndex];
+              location.href = randomRaadsel;
+              raadsels.splice(randomIndex, 1);
+              localStorage.setItem("raadsels", JSON.stringify(raadsels));
+            }
+
+          },
+          errorMessage => {
+            // Handle on error condition with the error message
+            console.log(`QR Code no longer in front of camera.`);
+          }
+        );
+    </script>
+  </body>
+</html>

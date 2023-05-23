@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+
+        height: 80vh;
+        width: 100vw;
+        background-color: #fafbf6;
+      }
+
+      @font-face {
+        font-family: eftelingP;
+        src: url(bestanden/fonts/Ledger/Ledger-Regular.ttf);
+      }
+
+      @font-face {
+        font-family: eftelingT;
+        src: url(bestanden/fonts/Leckerli_One/LeckerliOne-Regular.ttf);
+      }
+
+      h1 {
+        font-size: 42px;
+        font-family: eftelingT;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 20px;
+        font-family: eftelingP;
+      }
+
+      p {
+        font-size: 12px;
+        font-family: eftelingP;
+      }
+
+      nav {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        bottom: 0;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        color: #bfbfbf;
+        font-size: 12px;
+      }
+
+      nav img {
+        width: 35px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      nav div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        width: 100%;
+        height: 175px;
+        text-align: center;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url(bestanden/eftelingsymbolica.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .header h1 {
+        color: white;
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        transform: translate(-50%);
+      }
+
+      #backbtn {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 2.5%;
+        left: 5%;
+        background-image: url(bestanden/backbuttonpng.png);
+        background-size: cover;
+      }
+
+      .logo {
+        text-align: center;
+        margin-top: 5%;
+      }
+      .logo img {
+        width: 10%;
+      }
+
+      #raadselintro {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 80%;
+        font-size: 24px;
+      }
+
+      #raadseltext {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        color: #463d32;
+        font-size: 18px;
+      }
+
+      #form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #antwoordinput {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-top: -5%;
+        height: 40px;
+      }
+
+      #antwoordsubmit {
+        margin-top: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        font-family: elftelingT;
+        font-size: 22px;
+      }
+      textarea {
+        margin: 0%;
+        background-color: #d1d1d1;
+        border: 1px solid rgb(176, 176, 176);
+        border-radius: 10px;
+        resize: none;
+      }
+
+      input {
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        background-color: #b71234;
+        border-style: none;
+        box-shadow: 0 0 1px #000000 inset;
+      }
+
+      #hulp {
+        margin-bottom: 2.5%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: 12.5%;
+      }
+
+      #btn2chatbot {
+        margin: 0;
+        padding: 0%;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        background-color: #b71234;
+        background-image: url(bestanden/openai.png);
+        background-position: center;
+        background-size: cover;
+        border-style: none;
+        position: relative;
+        margin-bottom: -5%;
+      }
+      #hulp p {
+        position: relative;
+        right: -5%;
+        color: #636363;
+        width: 100px;
+        font-size: 12px;
+      }
+
+      #foutantwoord {
+        color: red;
+        margin-top: 1%;
+        font-size: 8px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hidden {
+        visibility: hidden;
+      }
+
+      @media (max-width: 400px ) {
+        #raadselintro {
+    
+        font-size: 20px;
+      }
+
+      #raadseltext {
+        
+        font-size: 12px;
+      }
+    }
+    </style>
+  </head>
+  <body id="r1">
+    <div class="container">
+      <div id="backbtn" onclick="history.back()"></div>
+      <div class="header">
+        <h1>
+          Wilde <br />
+          Raadsels
+        </h1>
+      </div>
+      <div class="logo"><img src="bestanden/efteling-logo.png" alt="" /></div>
+      <h2 id="raadselintro">Ben je klaar voor een mysterieuze uitdaging?</h2>
+      <p id="raadseltext">
+        Ik ben een wezen dat vliegt, met een hart vol avontuur en vol zin, ik
+        voel de wind in mijn veren, en neem je op een reis die je niet snel
+        meer kan keren. Wat ben ik?
+      </p>
+      <div id="hulp">
+        <p>Hulp nodig?</p>
+        <a id="btn2chatbot" href="assistant.html"></a>
+      </div>
+      <div id="form">
+        <textarea id="antwoordinput" placeholder="Jouw antwoord"></textarea>
+        <p id="foutantwoord" class="hidden">
+          Onjuist antwoord. Probeer het opnieuw
+        </p>
+        <input id="antwoordsubmit" type="submit" value="Verstuur" />
+      </div>
+    </div>
+
+    <nav>
+      <div id="kaart">
+        <a href=""></a
+        ><img src="bestanden/kaarticon.png" alt="" />Kaart
+      </div>
+      <div id="overnachten">
+        <a href=""></a
+        ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+      </div>
+      <div id="raadsel">
+        <a href="index.html"><img src="bestanden/raadselgrijs.png" alt="" /></a
+        >Raadsels
+      </div>
+      <div id="tickets">
+        <a href=""></a
+        ><img src="bestanden/ticketicon.png" alt="" />Tickets
+      </div>
+      <div id="Account">
+        <a href=""></a
+        ><img src="bestanden/meericon.png" alt="" />Account
+      </div>
+    </nav>
+    <script>
+       let raadselvogelrok = " Ik ben een wezen dat vliegt, met een hart vol avontuur en vol zin, ik voel de wind in mijn veren, en neem je op een reis die jee niet snel meer kan keren. Wat ben ik?"
+        localStorage.setItem("raadselbot", raadselvogelrok)
+
+        let antwoordvoorbot = "De Vogelrok"
+      localStorage.setItem("antwoordvoorbot", antwoordvoorbot)
+        
+      const input = document.getElementById("antwoordinput");
+      const submit = document.getElementById("antwoordsubmit");
+      const error = document.getElementById("foutantwoord");
+
+      //reset points
+      //localStorage.setItem("totalPoints", 0);localStorage.setItem("rp2", 10);localStorage.setItem("raadselcomplete2", 0);
+
+      const chatbot = document.getElementById("btn2chatbot");
+
+
+      let totalPoints = parseInt(localStorage.getItem("totalPoints")) || 0;
+      let rp2 = parseInt(localStorage.getItem("rp2")) || 10;
+      let raadselcomplete2 = parseInt(localStorage.getItem("raadselcomplete2")) || 0;
+
+      chatbot.addEventListener("click", ()=>{
+        localStorage.setItem("rp2", rp2);
+        let raadseltobot2 = parseInt(localStorage.getItem("raadseltobot2")) || 1;
+        localStorage.setItem("raadseltobot2", raadseltobot2)
+      })
+
+        //antwoorden
+      let vogel1 =  "Vogelrok";
+      let vogel2 =  "vogelrok";
+      let vogel3 =  "De vogelrok";
+      let vogel4 =  "De Vogelrok";
+
+      localStorage.setItem("antwoord1",vogel1)
+      localStorage.setItem("antwoord2",vogel2)
+      localStorage.setItem("antwoord3",vogel3)
+      localStorage.setItem("antwoord4",vogel4)
+
+      submit.addEventListener("click", () => {
+        if (
+          input.value === vogel1 ||
+          input.value === vogel2  ||
+          input.value === vogel3 ||
+          input.value === vogel4 
+        ) {
+          if (raadselcomplete2 === 0) {
+            raadselcomplete2 = 1;
+            localStorage.setItem("raadselcomplete2", raadselcomplete2);
+            localStorage.setItem("value", rp2);
+            totalPoints += rp2;
+            localStorage.setItem("totalPoints", totalPoints);
+          } else {
+            localStorage.setItem("value", 0);
+          }
+          location.href = "correct.html";
+        } else {
+          input.style.border = "1px solid red";
+          error.classList.remove("hidden");
+          rp2--;
+          localStorage.setItem("rp2", rp2);
+        }
+        console.log(totalPoints);
+        console.log(rp2);
+      });
+    </script>
+  </body>
+</html>

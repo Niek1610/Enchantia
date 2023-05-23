@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="bestanden/efteling.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Efteling GPT</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: eftelingP;
+  src: url(bestanden/fonts/Ledger/Ledger-Regular.ttf);
+}
+
+@font-face {
+  font-family: eftelingT;
+  src: url(bestanden/fonts/Leckerli_One/LeckerliOne-Regular.ttf);
+}
+
+
+body {
+margin: 0%;
+padding: 0%;
+font-family: eftelingP;
+background-color:#ffffff;
+
+
+}
+::-webkit-scrollbar { width: 0 !important }
+
+.header{
+  height: 150px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bestanden/R.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+h2{
+  margin-top: 5%;
+  font-size: 16px;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#GPT #app {
+  width: 90vw;
+  height: 42vh;
+  margin-top: 8%;
+  background: #B71234;
+  background-image: url(bestanden/300x300-pardoes-hero.png);
+  background-position: 110% 70%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+#GPT #chat_container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+  
+}
+
+
+
+#GPT .wrapper {
+  width: 100%;
+  padding: 15px;
+}
+#GPT .ai {
+  background: #00000055;
+}
+#GPT .chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#GPT .profile {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  background: #4581ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(bestanden/user.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#GPT .ai .profile {
+  background: #ff0000;
+  background-image: url(bestanden/efteling.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+
+#GPT .message {
+  flex: 1;
+  color: #ffffff;
+  font-size: 14px;
+  max-width: 100%;
+
+}
+
+
+#GPT form {
+  
+  width: 100%;
+  max-width: 1280px;
+  margin: 0% auto;
+  padding: 10px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+ 
+}
+
+#GPT form textarea {
+  width: 100%;
+  color: #000000;
+  font-size: 14px;
+ 
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+#GPT button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  color: rgb(56, 56, 56);
+  width: 50px;
+}
+
+#index a{
+  font-size: 50px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  background-color: #ffffff82;
+  padding: 0%;
+  justify-content: center;
+  align-items: center;
+  color: rgb(69, 32, 32);
+  text-decoration: none;
+}
+
+#index .container{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+#antwoordinput{
+  width: 70%;
+  height: 60px;
+  padding: 2%;
+  margin-top: 4%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgb(235, 235, 235);
+  resize: none;
+  border: 0.5px solid rgb(126, 126, 126);
+  box-shadow: 0 0 3px #000000 inset;
+  border-radius: 10px;
+}
+
+#foutantwoord{
+  font-size: 10px;
+  color: red;
+  position: absolute;
+  margin-top: 23%;
+  width: 100%;
+  text-align: center;
+
+}
+
+#antwoordsubmit{
+  position: relative;
+  right: 10%;
+  transform: translate(-50%);
+  margin-top: 6%;
+  background-color: #B71234;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  position: absolute;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.header{
+  color: white;
+  font-size: 42px;
+  text-align: center;
+  padding: 5%;
+  font-family: eftelingT;
+}
+
+#backbtn {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 2.5%;
+  left: 5%;
+  background-image: url(bestanden/backbuttonpng.png);
+  background-size: cover;
+}
+
+nav img {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #bfbfbf;
+  font-size: 12px;
+}
+
+#pardoes img{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+}
+
+    </style>
+  </head>
+  <body id="GPT">
+    <div id="backbtn" onclick="history.back()"></div>
+    <div class="header">
+      Raadsel <br> assistent
+    </div>
+      <div id="app">
+        <div id="chat_container"></div>
+        <form>
+          <textarea name="prompt" cols="1" rows="1" placeholder="Hier typen"></textarea>
+          <button type="submit"><i class="material-icons" style="font-size:36px">send</i></button>
+        </form>
+      </div>
+      <div id="form">
+        <div class="versturen">
+          <textarea placeholder="Jouw antwoord" id="antwoordinput" ></textarea>
+        <p id="foutantwoord" class="hidden">
+          Onjuist antwoord. Probeer het opnieuw
+        </p>
+        <button id="antwoordsubmit" type="submit"><i class="material-icons" style="font-size:36px">send</i></button>
+      </div></div>
+      <div id="pardoes" class="hidden"> <img src="bestanden/Pardoes1988.jpg" alt=""></div>
+      <nav>
+
+        <audio id="myAudio">
+          <source src="bestanden/five-nights-at-freddys-full-scream-sound_2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        
+        
+
+        <div id="kaart">
+          <a href=""></a
+          ><img src="bestanden/kaarticon.png" alt="" />Kaart
+        </div>
+        <div id="overnachten">
+          <a href=""></a
+          ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+        </div>
+        <div id="raadsel">
+          <a href="index.html"><img src="bestanden/raadselgrijs.png" alt="" /></a
+          >Raadsels
+        </div>
+        <div id="tickets">
+          <a href=""></a
+          ><img src="bestanden/ticketicon.png" alt="" />Tickets
+        </div>
+        <div id="Account">
+          <a href=""></a
+          ><img src="bestanden/meericon.png" alt="" />Account
+        </div>
+      </nav>
+        <script>
+          const pardoes = document.getElementById("pardoes")
+
+          const err = document.getElementById("foutantwoord");
+
+          let rp1 =  parseInt(localStorage.getItem("rp1")) || 5,
+              rp2 =  parseInt(localStorage.getItem("rp2")) || 10,
+              rp3 =  parseInt(localStorage.getItem("rp3")) || 15
+      
+          let totalPoints = parseInt(localStorage.getItem("totalPoints")) || 0
+
+          let raadselcomplete1 = parseInt(localStorage.getItem("raadselcomplete1")) || 0,
+           raadselcomplete2 = parseInt(localStorage.getItem("raadselcomplete2")) || 0,
+           raadselcomplete3 = parseInt(localStorage.getItem("raadselcomplete3")) || 0
+
+          let raadseltobot1 = parseInt(localStorage.getItem("raadseltobot1")),
+           raadseltobot2 = parseInt(localStorage.getItem("raadseltobot2")),
+           raadseltobot3 = parseInt(localStorage.getItem("raadseltobot3"))
+  
+          const input = document.getElementById("antwoordinput"),
+                submit = document.getElementById("antwoordsubmit"),
+                error = document.getElementById("foutantwoord")
+        
+
+          let antwoord1 = localStorage.getItem("antwoord1"),
+              antwoord2 = localStorage.getItem("antwoord2"),
+              antwoord3 = localStorage.getItem("antwoord3"),
+              antwoord4 = localStorage.getItem("antwoord4")
+
+      
+          submit.addEventListener("click", ()=> {
+            console.log(rp1)
+            if (input.value === "Pardoes"){
+              pardoes.classList.remove("hidden")
+              let x = document.getElementById("myAudio");
+              x.play();
+            }
+
+           
+
+            if ( input.value === antwoord1 || 
+                 input.value === antwoord2 ||  
+                 input.value === antwoord3 || 
+                 input.value === antwoord4
+                 ) {
+
+                  if (raadseltobot1 === 1){
+                    if (raadselcomplete1 === 0){
+                      localStorage.setItem("raadseltobot1", raadseltobot1)
+                      raadselcomplete1 = 1;
+                      localStorage.setItem("raadselcomplete1", raadselcomplete1);
+                      localStorage.setItem("value", rp1);
+                      totalPoints += rp1;
+                      localStorage.setItem("totalPoints", totalPoints);
+                    } else {
+                      localStorage.setItem("value", 0);
+                    }
+                  } 
+
+                  if (raadseltobot2 === 1){
+                    if (raadselcomplete2 === 0){
+                      localStorage.setItem("raadseltobot2", raadseltobot2)
+                      raadselcomplete2 = 1;
+                      localStorage.setItem("raadselcomplete2", raadselcomplete2);
+                      localStorage.setItem("value", rp2);
+                      totalPoints += rp2;
+                      localStorage.setItem("totalPoints", totalPoints);
+                    } else {
+                      localStorage.setItem("value", 0);
+                    }
+                  } 
+
+                  if (raadseltobot3 === 1){
+                    if (raadselcomplete3 === 0){
+                      localStorage.setItem("raadseltobot3", raadseltobot3)
+                      raadselcomplete3 = 1;
+                      localStorage.setItem("raadselcomplete3", raadselcomplete3);
+                      localStorage.setItem("value", rp3);
+                      totalPoints += rp3;
+                      localStorage.setItem("totalPoints", totalPoints);
+                    } else {
+                      localStorage.setItem("value", 0);
+                    }
+                  } 
+
+                  location.href = "correct.html";
+            } else {
+
+            
+
+              input.style.border = "1px solid red";
+              err.classList.remove("hidden");
+              if (raadseltobot1 === 1){
+                rp1--;
+                localStorage.setItem("rp1", rp1);
+              }
+              if (raadseltobot2 === 1){
+                rp2--;
+                localStorage.setItem("rp2", rp2);
+              }
+              if (raadseltobot3 === 1){
+                rp3--;
+                localStorage.setItem("rp3", rp3);
+              }
+            }
+          })
+
+
+        </script>
+
+    <script type="module" src="script.js">
+    </script>
+  </body>
+</html>

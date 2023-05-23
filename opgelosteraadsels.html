@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      href="//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine"
+      rel="stylesheet"
+      type="text/css"
+    >
+    <link
+      href="https://fonts.googleapis.com/css?family=Leckerli One"
+      rel="stylesheet"
+      type="text/css">
+
+    <title>Raadsels pagina</title>
+    <style>
+      @import url(//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine);
+
+      @font-face {
+        font-family: "FF Ernestine";
+        src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot");
+        src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot?#iefix")
+            format("embedded-opentype"),
+          url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff2")
+            format("woff2"),
+          url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff")
+            format("woff"),
+          url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.ttf")
+            format("truetype"),
+          url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.svg#FF Ernestine")
+            format("svg");
+      }
+
+      body {
+        margin: auto;
+        padding: 0%;
+        background-color: #fafbf6;
+        height: 100vh;
+        width: 100vw;      
+      }
+
+      h1{
+        font-size: 28px;
+      }
+
+
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: #ff0000;
+        color: #fafbf6;
+        font-size: 44px;
+        margin: 0px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("bestanden/raadselspaginaheaderfoto.jpg");
+        background-size: cover;
+        background-position: center;
+        font-family: "Leckerli One";
+        text-align: center;
+      }
+
+      
+    
+      #fotopython1 {
+        
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/pythonfoto1.jpg");
+      }
+
+      #fotopyhton2 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/pyhtonfoto2.jpg");
+      }
+
+      #fotopyhton3 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/pyhtonfoto3.jpg");
+      }
+
+      #fotojorisdraak1 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/jorisdraakfoto1.jfif");
+      }
+
+      #fotojorisdraak2 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/jorisdraakfoto2.png");
+      }
+
+      #fotojorisdraak3 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/jorisdraakfoto3.jpg");
+      }
+
+      #fotovogel1 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/vogelrokfoto1.jpeg");
+      }
+
+      #fotovogel2 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/vogelrokfoto2.jpg");
+      }
+
+      #fotovogel3 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/vogelrokfoto3.jfif");
+      }
+
+      #fotobaron1 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/baron1898foto1.jpg");
+      }
+
+      #fotobaron2 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/baron1898foto2.jpg");
+      }
+
+      #fotobaron3 {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          url("bestanden/baron1898foto3.jpg");
+      }
+
+      .slotjeicon img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .titelsenartikelen {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        
+      }
+
+      article {
+        background-color: rgb(0, 132, 255);
+        padding: 10px;
+        text-align: center;
+        background-size: cover;
+      }
+
+      .titelvanraadsels {
+        color: #000000;
+        text-align: center;
+        font-size: 10px;
+        font-family: "Leckerli One";
+      }
+
+      nav {
+        
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        bottom: 0;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        color: #bfbfbf;
+        font-size: 12px;
+      }
+
+      nav img {
+        width: 35px;
+        height: 35px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      nav div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #backbtn {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 2.5%;
+        left: 5%;
+        background-image: url(bestanden/backbuttonpng.png);
+        background-position: center;
+        background-size: cover;
+
+      }
+
+      .hiding{
+        visibility: hidden;
+      }
+
+      #invis{
+        height: 100px;
+        width: 100px;
+        background-color: #000000;
+        visibility: hidden;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="container">  
+      <div id="backbtn"  onclick="history.back()"></div>
+
+    <div class="header">
+      <div class="titelheader">Opgeloste <br> Raadsels</div>
+    </div>
+
+    <div class="titelvanraadsels">
+      <h1>De Python</h1>
+    </div>
+
+    <div class="titelsenartikelen">
+      <article id="fotopython1">
+        <div class="slotjeicon" id="slotjeicon1">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+
+      <article id="fotopyhton2">
+        <div class="slotjeicon" id="slotjeicon2">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+
+      <article id="fotopyhton3">
+        <div class="slotjeicon" id="slotjeicon3">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+    </div>
+
+    <div class="titelvanraadsels">
+      <h1>Joris & de Draak</h1>
+    </div>
+
+    <div class="titelsenartikelen">
+      <article id="fotojorisdraak1">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+
+      <article id="fotojorisdraak2">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+
+      <article id="fotojorisdraak3">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+    </div>
+
+    <div class="titelvanraadsels">
+      <h1>Vogelrok</h1>
+    </div>
+
+    <div class="titelsenartikelen">
+      <article id="fotovogel1">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+
+      <article id="fotovogel2">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+
+      <article id="fotovogel3">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+    </div>
+
+    <div  class="titelvanraadsels">
+      <h1>Baron 1898</h1>
+    </div>
+
+    <div  id="tr3" class="titelsenartikelen">
+      <article id="fotobaron1">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+
+      <article id="fotobaron2">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+
+      <article id="fotobaron3">
+        <div class="slotjeicon" id="slotjeicon">
+          <img src="bestanden/artboard-2.png" alt="" >
+        </div>
+      </article>
+    </div>
+
+    <div id="invis">
+      
+        </div>
+   
+    
+
+    <nav>
+      <div id="kaart">
+        <a href=""></a
+        ><img src="bestanden/kaarticon.png" alt="" />Kaart
+      </div>
+      <div id="overnachten">
+        <a href=""></a
+        ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+      </div>
+      <div id="raadsel">
+        <a href="index.html"><img src="bestanden/raadselgrijs.png" alt="" /></a
+        >Raadsels
+      </div>
+      <div id="tickets">
+        <a href=""></a
+        ><img src="bestanden/ticketicon.png" alt="" />Tickets
+      </div>
+      <div id="Account">
+        <a href=""></a
+        ><img src="bestanden/meericon.png" alt="" />Account
+      </div>
+    </nav></div>
+   
+   <script src="main.js"></script>
+  </body>
+</html>

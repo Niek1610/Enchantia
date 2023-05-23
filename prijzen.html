@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/a56d949a6d6d64d17b1a95dc59f35fe8?family=VernerW00-Regular"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Leckerli One"
+    />
+    <title>Document</title>
+
+  <style>
+    @import url(//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine);
+
+    @font-face {
+      font-family: "FF Ernestine";
+      src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot");
+      src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot?#iefix")
+          format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff2")
+          format("woff2"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff")
+          format("woff"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.ttf")
+          format("truetype"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.svg#FF Ernestine")
+          format("svg");
+    }
+
+    @import url(//db.onlinewebfonts.com/c/a56d949a6d6d64d17b1a95dc59f35fe8?family=VernerW00-Regular);
+
+    @font-face {
+      font-family: "VernerW00-Regular";
+      src: url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.eot");
+      src: url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.eot?#iefix")
+          format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.woff2")
+          format("woff2"),
+        url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.woff")
+          format("woff"),
+        url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.ttf")
+          format("truetype"),
+        url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.svg#VernerW00-Regular")
+          format("svg");
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fafbf6;
+      
+    }
+
+    h2 {
+      width: 80%;
+      margin-top: 1vh;
+      text-align: center;
+      font-size: 12px;
+      padding: 10px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "ff ernestine";
+    }
+
+    h3 {
+      margin: 0px 0px;
+      text-align: center;
+      font-size: 25px;
+      width: 80%;
+      margin-top: 1vh;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "ff ernestine";
+      font-size: 20px;
+      margin-top: 20%;
+    }
+    .prijzen {
+      width: 100vw;
+      height: 20vh;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(bestanden/souvenirshop.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .stars {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 6vh;
+      left: 35vh;
+    }
+
+    .titel {
+      margin-top: 7.5vh;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: "Leckerli One";
+      font-size: 48px;
+    }
+
+    .logo {
+      width: 12%;
+      left: 50%;
+      transform: translate(-50%);
+      position: relative;
+      margin-top: 2vh;
+    }
+
+    #eerste-claim {
+      width: 160px;
+      height: 160px;
+      border-radius: 10px;
+      background-image: 
+        url(bestanden/derdeclaim.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #tweede-claim {
+      width: 160px;
+      height: 160px;
+      border-radius: 10px;
+      background-image: 
+        url(bestanden/tweedeclaim.png);
+      background-position: center;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #derde-claim {
+      width: 160px;
+      height: 160px;
+      border-radius: 10px;
+      background-image: 
+        url(bestanden/eersteclaim.png);
+      background-position: center;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+
+
+    #punten {
+      background: #b71234;
+      color: white;
+      width: 90%;
+     
+      height: 60px;
+      margin-top: 6%;
+      border-radius: 10px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 20px;
+      font-family: "Leckerli One";
+      position: relative;
+      
+    }
+
+    #stickers {
+      background: #b71234;
+      color: white;
+      width: 90%;
+      height: 60px;
+      margin-top: 6%;
+      border-radius: 10px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 20px;
+      font-family: "Leckerli One";
+      position: relative;
+      place-items: center;
+      
+    }
+
+
+
+    .claim {
+        background: #b71234;
+      color: white;
+      width: 60%;
+      height: 20%;
+      margin-top: 65%;
+      border-radius: 20px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 15px;
+      font-family: "Leckerli One";
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    #claim-lock {
+        background: #474747;
+      color: white;
+      width: 60%;
+      height: 20%;
+      margin-top: 65%;
+      border-radius: 20px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 15px;
+      font-family: "Leckerli One";
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .slot {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container {
+        height: 100vh;
+      width: 100%;
+    }
+
+    
+
+
+    nav {
+        left: 0;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        bottom: 0;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        color: #bfbfbf;
+        font-size: 12px;
+      }
+
+
+
+    nav img {
+      width: 35px;
+      height: 35px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    nav div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .test {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 7.5%;
+      margin-right: 7.5%;
+   
+      place-items: center;
+    }
+
+ #achtergrondpopup {
+  position: fixed;
+  left: 0;
+  top: 0%;
+  background-color: #00000084;
+  height: 100%;
+  width: 150%;
+  z-index: 98;
+
+
+ }   
+  
+#depopup{
+        top: 10%;
+        position: fixed;
+        background-color: #F2EEE3;
+        align-content: center;
+        width: 70%;
+        height: auto;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 10%;
+        border-radius: 10px;
+        box-shadow: 0 0 3px #000000 inset;
+        z-index: 99;
+     }     
+     
+     .fotoinpopup img{
+      position: relative;
+        max-width: 300px;
+        max-height: 600px;  
+       left: 50%;
+       transform: translate(-50%);
+         
+     }
+
+     p{
+        text-align: center;
+        font-size: 14px;
+        font-family: 'ff ernestine';
+        margin: 20px;
+        margin-top: -5px;
+     }
+
+     #activeer {
+      background: #b71234;
+      color: white;
+      width: 51%;
+      margin-top: 1%;
+      border-radius: 10px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 20px;
+      font-family: "Leckerli One";
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      margin-bottom: 10%;
+      position: relative;
+      
+    }
+
+
+    #geactiveerd {
+      background: #b71234;
+      color: white;
+      width: 50%;
+      height: 6%;
+      margin-top: 1%;
+      border-radius: 10px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 20px;
+      font-family: "Leckerli One";
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      position: absolute;
+      
+    }
+
+    #code{
+      position: relative;
+      margin-top: -8%;
+      font-weight: bolder;
+      font-size: 16px;
+    }
+
+    #timer{
+      position: relative;
+      margin-top: -8%;
+      font-weight: bolder;
+      font-size: 16px;
+    }
+
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .claimbtn{
+      position: absolute;
+      width: 80px;
+      height: 30px;
+      border-style: none;
+      background-color: #b71234;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0 0 1px #000000 inset;
+    }
+
+    .lockedbtn{
+      position: absolute;
+      width: 80px;
+      height: 30px;
+      background-color: #350000;
+      border-radius: 10px;
+    }
+
+    .lockedbtn img{
+    
+      position: relative;
+      transform: translate(-50%);
+      left: 50%;
+      width: 50%;
+    }
+    
+    .btns{
+      display: flex;
+      justify-content: center;
+      margin-top: 75%;
+     
+    }
+
+    #backbtn {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-image: url(bestanden/backbuttonpng.png);
+        background-size: cover;
+        top: 2.5%;
+        left: 5%;
+        z-index: 50;
+      }
+
+      #kruis{
+        position: absolute;
+        top: -2%;
+        right: -2%;
+        height: 50px;
+        width: 50px;
+        background-color: rgb(166, 29, 29);
+        border-radius: 100%;
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+      }
+
+
+      .invis{
+        height: 100px;
+        width: 100px;
+        background-color: #000000;
+        visibility: hidden;
+      }
+
+
+      #gefeliciteerd{
+        font-size: 22px;
+        font-weight: bolder;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #prijstext2{
+        position: relative;
+        color: #00000046;
+        margin-top: 2.5%;
+      }
+
+      #prijstext1{
+        font-size: larger;
+      
+      }
+
+      .pointsPrijs{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5%;
+        place-items: center; 
+    
+        
+      }
+
+  </style>
+    </head>
+  <body>
+    <div id="backbtn" onclick="history.back()"></div>
+    <div class="container">
+      <div>
+        <div class="prijzen">
+          <img class="stars" src="bestanden/sparkles.png" alt="stars" />
+          <h1 class="titel">Prijzen</h1>
+        </div>
+      </div>
+
+      <div class="pointsPrijs">
+        <button id="stickers">Stickers: X</button>
+        <button id="punten">Punten: X</button>
+      </div>
+     
+     
+
+      <div class="text">
+          <h2 id="prijstext2"> Kijk op deze pagina verder om jouw betoverende prijs te claimen! Van souvenirs tot mooie kortingen! </h2>
+      </div>
+
+      <div class="test">
+        <div id="eerste-claim">
+
+          <div class="btns">
+            <button class="claimbtn" id="claim1">Claim</button>
+            <div class="lockedbtn" id="lbtn1">
+              <img src="bestanden/slot.png" alt="">
+            </div>
+            <h3 id="pp1">x</h3>
+          </div>
+         
+         
+
+        </div>
+
+        <div id="tweede-claim">
+          <div class="btns">
+            <button class="claimbtn" id="claim2">Claim</button>
+            <div class="lockedbtn" id="lbtn2"> <img src="bestanden/slot.png" alt=""></div>
+            <h3 id="pp2">x</h3>
+          </div>
+         
+         
+          
+      </div>
+
+      <div id="derde-claim">
+
+        <div class="btns">
+          <button class="claimbtn" id="claim3">Claim</button>
+          <div class="lockedbtn"  id="lbtn3"> <img src="bestanden/slot.png" alt=""></div>
+          <h3 id="pp3">x</h3>
+        </div>
+       
+      </div>
+       
+     <div class="invis">
+
+     </div>
+
+     <div class="invis">
+
+     </div>
+      
+      
+
+    </div>
+        <div id="achtergrondpopup" class="hidden" >
+          <div id="depopup">
+
+            <div class="fotoinpopup">
+    <img  id="prijsfoto" src="bestanden/eersteclaim.png">
+            </div>
+              <p id="code" class="hidden"></p>
+
+              <button id="kruis">X</button>
+            <p id="gefeliciteerd"> Gefeliciteerd!</p>
+               <p id="prijstext"> Haal jouw prijs op bij
+                één van onze restaurants! </p>
+               <p id="infotext"> Activeer en ontvang jouw code! <br><span style="font-weight: bold; font-size: 14px;"> Code is voor 10 min geldig.</span>  </p>
+              </article>
+
+              <button id="geactiveerd">Geactiveerd</button>
+              <button id="activeer">Activeer</button>
+
+              <p id="timer" class="hidden"></p>
+              
+
+        </div> 
+        </div>
+   
+
+      <nav>
+        <div id="kaart">
+          <a href=""></a
+          ><img src="bestanden/kaarticon.png" alt="" />Kaart
+        </div>
+        <div id="overnachten">
+          <a href=""></a
+          ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+        </div>
+        <div id="raadsel">
+          <a href="index.html"><img src="bestanden/raadselgrijs.png" alt="" /></a
+          >Raadsels
+        </div>
+        <div id="tickets">
+          <a href=""></a
+          ><img src="bestanden/ticketicon.png" alt="" />Tickets
+        </div>
+        <div id="Account">
+          <a href=""></a
+          ><img src="bestanden/meericon.png" alt="" />Account
+        </div>
+      </nav>
+    </div>
+    <script src="popup.js">
+
+      
+    </script>
+  </body>
+</html>
