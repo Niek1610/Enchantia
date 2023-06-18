@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/a56d949a6d6d64d17b1a95dc59f35fe8?family=VernerW00-Regular"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Leckerli One"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url(//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine);
+
+    @font-face {
+      font-family: "FF Ernestine";
+      src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot");
+      src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot?#iefix")
+          format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff2")
+          format("woff2"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff")
+          format("woff"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.ttf")
+          format("truetype"),
+        url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.svg#FF Ernestine")
+          format("svg");
+    }
+
+    @import url(//db.onlinewebfonts.com/c/a56d949a6d6d64d17b1a95dc59f35fe8?family=VernerW00-Regular);
+
+    @font-face {
+      font-family: "VernerW00-Regular";
+      src: url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.eot");
+      src: url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.eot?#iefix")
+          format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.woff2")
+          format("woff2"),
+        url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.woff")
+          format("woff"),
+        url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.ttf")
+          format("truetype"),
+        url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.svg#VernerW00-Regular")
+          format("svg");
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fafbf6;
+      
+    }
+
+    h2 {
+      width: 85%;
+      text-align: center;
+      margin-top: 1%;
+      font-size: 20px;
+      padding: 10px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "ff ernestine";
+    }
+
+
+    p {
+      margin: 0px 0px;
+      text-align: center;
+      font-size: 12px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      color: grey;
+      font-family: "ff ernestine";
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 10px;
+      color: grey;
+      font-family: "ff ernestine";
+    }
+
+    h5 {
+      text-align: center;
+      color: white;
+      margin-top: 35px;
+      font-size: 20px;
+      font-family: "Leckerli One";
+    }
+
+    nav img {
+      width: 30px;
+      height: auto;
+    }
+    
+    .wachtrij {
+      width: 100vw;
+      height: 20vh;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(bestanden/wachtrij.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .stars {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 6vh;
+    }
+
+    .titel {
+      margin-top: 2.5vh;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: "Leckerli One";
+      font-size: 42px;
+    }
+
+    .logo {
+      width: 10%;
+      left: 50%;
+      transform: translate(-50%);
+      position: relative;
+      margin-top: 3vh;
+    }
+
+    #prijzen {
+      width: 120px;
+      height: 100px;
+      border-radius: 10px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(bestanden/souvenirshop.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-decoration: none;
+    }
+
+    #raadsels {
+      width: 120px;
+      height: 100px;
+      border-radius: 10px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(bestanden/questionmark.jpeg);
+      background-position: center;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-decoration: none;
+    }
+
+    #scan {
+      background: #b71234;
+      color: white;
+      width: 50%;
+      height: 7%;
+      margin-top: 6%;
+      border-radius: 10px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 20px;
+      font-family: "Leckerli One";
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .container {
+      height: 85vh;
+      width: 100vw;
+      background-color: #fafbf6;
+    }
+
+    .text {
+      position: relative;
+    }
+
+    nav {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 10px;
+      bottom: 0;
+      position: fixed;
+      height: 60px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      color: #bfbfbf;
+      font-size: 12px;
+    }
+
+    #raadsel img{
+      width: 50px;
+      height: auto;
+      position: relative;
+      top: 5px;
+    }
+
+    #raadsel{
+      position: relative;
+      margin-top: -20px;
+    
+    }
+
+    nav img {
+      width: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    nav div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .test {
+      margin-top: 6%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 10%;
+      margin-right: 10%;
+      place-items: center;
+    }
+
+    @media (max-width: 400px ) {
+   h2 {
+    font-size: 16px;
+   }
+}
+
+  </style>
+  <body>
+    <div class="container">
+      <div>
+        <div class="wachtrij">
+          <img class="stars" src="bestanden/sparkles.png" alt="stars" />
+          <h1 class="titel">Betoverende raadsels</h1>
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="logo"
+          src="bestanden/efteling-logo.png"
+          alt="efteling-logo"
+        />
+      </div>
+
+      <div class="text">
+        <h2>
+          Welkom, beste bezoeker, in ons betoverende spel! Hier krijg je de kans
+          om jouw kennis te testen met onze uitdagende quizvragen.
+        </h2>
+
+        <p>
+          Maar pas op, elke keer dat je een fout antwoord geeft, gaat er helaas één punt van jouw score af. Heb je genoeg punten gescoord? 
+          Claim dan leuke prijzen!
+        </p>
+      
+      </div>
+
+      <div class="test">
+        <a href="prijzen.html" id="prijzen">
+          <h5>Prijzen</h5>
+        </a>
+        <a href="opgelosteraadsels.html" id="raadsels">
+          <h5>Raadsels</h5>
+        </a>
+      </div>
+
+      <a href="QR.html"> <button id="scan">Scan</button></a>
+
+      <nav>
+        <div id="kaart">
+          <a href=""></a
+          ><img src="bestanden/kaarticon.png" alt="" />Kaart
+        </div>
+        <div id="overnachten">
+          <a href=""></a
+          ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+        </div>
+        <div id="raadsel">
+          <a href="index.html"></a
+          ><img src="bestanden/raadelrood.png" alt="" />Raadsels
+        </div>
+        <div id="tickets">
+          <a href=""></a
+          ><img src="bestanden/ticketicon.png" alt="" />Tickets
+        </div>
+        <div id="Account">
+          <a href=""></a
+          ><img src="bestanden/meericon.png" alt="" />Account
+        </div>
+      </nav>
+    </div>
+    <script> 
+  
+ //localStorage.clear()  
+ //t = 30
+ //localStorage.setItem("totalPoints", t)
+
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,762 @@
+@import url(//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine);
+
+@font-face {
+  font-family: "FF Ernestine";
+  src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot");
+  src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.svg#FF Ernestine")
+      format("svg");
+}
+
+@import url(//db.onlinewebfonts.com/c/a56d949a6d6d64d17b1a95dc59f35fe8?family=VernerW00-Regular);
+
+@font-face {
+  font-family: "VernerW00-Regular";
+  src: url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.eot");
+  src: url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a56d949a6d6d64d17b1a95dc59f35fe8.svg#VernerW00-Regular")
+      format("svg");
+}
+
+*{
+  font-family: "FF Ernesti";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafbf6;
+  
+}
+
+h2 {
+  width: 85%;
+  text-align: center;
+  margin-top: 1%;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "ff ernestine";
+}
+
+
+p {
+  margin: 0px 0px;
+  text-align: center;
+  font-size: 12px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: grey;
+  font-family: "ff ernestine";
+}
+
+h4 {
+  text-align: center;
+  font-size: 10px;
+  color: grey;
+  font-family: "ff ernestine";
+}
+
+h5 {
+  text-align: center;
+  color: white;
+  margin-top: 35px;
+  font-size: 20px;
+  font-family: "Leckerli One";
+}
+
+nav img {
+  width: 30px;
+  height: auto;
+}
+
+.wachtrij {
+  width: 100vw;
+  height: 20vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(bestanden/wachtrij.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.knuffels {
+    width: 100vw;
+    height: 20vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(bestanden/knuffels.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    pointer-events: none;
+  }
+
+
+.stars {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 6vh;
+}
+
+.stars2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 6vh;
+}
+
+.titel {
+  margin-top: 7.5vh;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Leckerli One";
+  font-size: 42px;
+}
+
+.logo {
+  width: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  position: relative;
+  margin-top: 3vh;
+}
+
+#hunt {
+  width: 140px;
+  height: 115px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(bestanden/langnek.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+#raadsels {
+  width: 140px;
+  height: 115px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(bestanden/questionmark.jpeg);
+  background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+#prijsbtn {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(bestanden/souvenirshop.jpg);
+background-size: cover;
+  color: white;
+  width: 70%;
+  height: 12.5%;
+  margin-top: 6%;
+  border-radius: 10px;
+  border-color: #b71234;
+  border-style: none;
+  box-shadow: 0 0 3px #000000 inset;
+  font-size: 20px;
+  font-family: "Leckerli One";
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.container {
+  height: 85vh;
+  width: 100vw;
+  background-color: #fafbf6;
+}
+
+.text {
+  position: relative;
+}
+
+nav {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #bfbfbf;
+  font-size: 12px;
+}
+
+#raadsel img{
+  width: 50px;
+  height: auto;
+  position: relative;
+  top: 5px;
+}
+
+#raadsel{
+  position: relative;
+  margin-top: -20px;
+
+}
+
+nav img {
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+}
+
+.test {
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+  place-items: center;
+}
+
+#vangtext{
+  font-family: "FF Ernestine";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  color: #b71234;
+  width: 200px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 15px;
+  background-color: white;
+
+}
+
+#squareAr{
+  top: 50%;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  background-color: #ffffff00;
+  border: 5px solid white;
+}
+
+#buttonArScan{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: 15px solid #b71234;
+  z-index: 99;
+}
+
+@media (max-width: 400px ) {
+h2 {
+font-size: 14px;
+}
+
+#hunt{
+  width: 125px;
+  height: 100px;
+}
+#raadsels{
+  width: 125px;
+  height: 100px;
+}
+
+#prijsbtn{
+  height: 12.5%;
+}
+
+.titel{
+   font-size: 36px;
+}
+}
+
+
+#spel{
+  background-image: url(bestanden/backgroundspel.png) ;
+  background-size: cover;
+
+}
+
+
+#backbtn {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+  background-image: url(bestanden/backbuttonpng.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 99;
+}
+
+#knuffel1 {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  background-image: 
+    url(bestanden/dragon.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10%;
+}
+
+#knuffel2 {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  background-image: 
+    url(bestanden/princess.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10%;
+
+}
+
+#knuffel3 {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  margin-top: 7%;
+  background-image: 
+    url(bestanden/donkey.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#knuffel4 {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  margin-top: 7%;
+  background-image: 
+    url(bestanden/roodkapje.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btns{
+  display: grid;
+  place-items: center;
+  margin-top: 90%;
+}
+
+.claimbtn{
+
+  width: 80px;
+  height: 30px;
+  border-style: none;
+  background-color: #b71234;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 1px #000000 inset;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 2%;
+  margin-right: 2%;
+  place-items: center;
+}
+
+#achtergrondpopup {
+  position: fixed;
+  left: 0;
+  top: 0%;
+  background-color: #00000079;
+  height: 100%;
+  width: 150%;
+  z-index: 98;
+ }   
+  
+#depopup{
+        top: 10%;
+        position: fixed;
+        background-color: #F2EEE3;
+        align-content: center;
+        width: 70%;
+        height: auto;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 10%;
+        border-radius: 10px;
+        box-shadow: 0 0 3px #000000 inset;
+        z-index: 99;
+     
+        
+     }     
+     
+     .fotoinpopup img{
+      position: relative;
+        max-width: 300px;
+        max-height: 600px;  
+       left: 50%;
+       transform: translate(-50%);
+         
+     }
+
+     p{
+        text-align: center;
+        font-size: 14px;
+        font-family: 'ff ernestine';
+        margin: 20px;
+        margin-top: -5px;
+     }
+     
+     #activeer {
+      background: #b71234;
+      color: white;
+      width: 51%;
+      margin-top: 1%;
+      border-radius: 10px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 20px;
+      font-family: "Leckerli One";
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      margin-bottom: 10%;
+      position: relative;
+      
+    }
+
+
+    #geactiveerd {
+      background: #b71234;
+      color: white;
+      width: 50%;
+      height: 6%;
+      margin-top: 1%;
+      border-radius: 10px;
+      border-color: #b71234;
+      border-style: none;
+      box-shadow: 0 0 3px #000000 inset;
+      font-size: 20px;
+      font-family: "Leckerli One";
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      position: absolute;
+      
+    }
+
+    .titel {
+      font-family: "Leckerli One";
+    }
+
+    #code{
+      position: relative;
+      font-weight: bolder;
+      font-size: 16px;
+      margin-top: 5%;
+    }
+
+    #timer{
+      position: relative;
+      margin-top: -8%;
+      font-weight: bolder;
+      font-size: 16px;
+    }
+
+    #kruis{
+      position: absolute;
+      top: -2%;
+      right: -2%;
+      height: 50px;
+      width: 50px;
+      background-color: rgb(166, 29, 29);
+      border-radius: 100%;
+      color: white;
+      font-size: larger;
+      font-weight: bolder;
+      z-index: 99;
+    }
+
+    #prijsfoto {
+      margin-top: 5%;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%);
+    }
+
+.scorecontent{
+  text-align: center;
+}
+
+#scoreText{
+  color: #b71234;
+  font-weight: bold;
+  font-size: 22px;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+ 
+}
+
+
+#oefenronde{
+  margin: 0%;
+  width: 100px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: rgb(247, 255, 201);
+  font-size: 14px;
+}
+
+
+.hearts{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10%;
+}
+
+
+#skipbtnSpel{
+  position: absolute;
+  right: 2%;
+  bottom: 10%;
+  background-color: white;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border: 2px solid #b71234;
+  color: #b71234;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#fairybox{
+  position: relative;
+  width: 100vw;
+  height: 70vw;
+}
+
+
+#fairyTarget{
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  transition: all .1s ease-in-out;
+  background-image: url(bestanden/fairy.png);
+  background-repeat: no-repeat
+}
+
+
+
+
+.popupDemo{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  background-color: #00000080;
+  margin: 0%;
+  padding: 0%;
+}
+
+#popupDone{
+  display: none;
+}
+
+#popSpel{
+  display: none;
+}
+#doneContent{
+  text-align: center;
+}
+
+#spelopnieuw{
+  text-align: center;
+  width: 120px;
+  height: 50px;
+
+  background-color: #ffffff;
+  color: rgb(148, 9, 9);
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+#spelstop{
+  text-align: center;
+  width: 120px;
+  height: 50px;
+
+  background-color: #b71234;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.popupcontent{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -10%);
+  width: 300px;
+  height: 140px;
+  background-color: rgb(255, 247, 219);
+  border-radius: 10px;
+}
+
+.popupcontentSpel{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -20%);
+  width: 300px;
+  height: 460px;
+  background-color: rgb(255, 247, 219);
+  border-radius: 10px;
+}
+
+
+.popupcontentSpel button{
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.popupcontent button{
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.demobtns{
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#demoSkip{
+  background-color: white;
+  border: 1px solid #000000;
+  color: #b71234;
+  font-weight: bold;
+}
+
+#demoBegin{
+  background-color: #b71234;
+  border: 1px solid #000000;
+  color: white;
+  font-weight: bold;
+}
+
+
+.hidden{
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+#statusText{
+  font-size: 30px;
+  margin-top: 5%;
+  
+}
+
+#statusZin{
+  font-size: 10px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.btns2{
+  text-align: center;
+margin: 0%;
+}
+
+#fairystickerClaimed{
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -19,5 +19,3 @@ const slot3 = document.getElementById("slotjeicon3")
 if (complete3 == 1) {
     slot3.classList.add("hiding")
 }
-
-

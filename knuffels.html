@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Leckerli One"
+/>
+  <title>Document</title>
+</head>
+<body>
+       <div class="container">
+
+        <div id="achtergrondpopup" class="hidden" >
+          <div id="depopup">
+
+            <div class="fotoinpopup">
+    <img  id="prijsfoto" src="bestanden/dragonclear.png">
+            </div>
+              <p id="code" class="hidden"></p>
+
+              <button id="kruis">X</button>
+            <p id="gefeliciteerd"> Gefeliciteerd!</p>
+               <p id="prijstext"> Haal jouw prijs op bij
+                één van onze restaurants! </p>
+               <p id="infotext"> Activeer en ontvang jouw code! <br><span style="font-weight: bold; font-size: 14px;"> Code is voor 10 min geldig.</span>  </p>
+              </article>
+
+              <button id="geactiveerd">Geactiveerd</button>
+              <button id="activeer">Activeer</button>
+
+              <p id="timer" class="hidden"></p>
+              
+
+        </div> 
+      </div>
+          <div id="backbtn" onclick="history.back()"></div>
+          <div>
+            <div class="knuffels">
+              <img class="stars2" src="bestanden/sparkles.png" alt="stars" />
+              <h1 class="titel">Knuffels</h1>
+            </div>
+          </div>
+
+          <h2>Breid per bezoek jouw knuffel familie uit! Kies uit 1 van de 4 knuffels en haal die op bij een souvenirshop.</h2>
+
+          <div class="grid">
+            <div id="knuffel1">
+    
+              <div class="btns">
+                <button class="claimbtn" id="claim1">Kies</button>
+              </div>
+            </div>
+    
+            <div id="knuffel2">
+              <div class="btns">
+                <button class="claimbtn" id="claim">Kies</button>
+              </div>
+            </div>
+             
+              
+        
+    
+          <div id="knuffel3">
+            <div class="btns">
+              <button class="claimbtn" id="claim">Kies</button>
+            </div> 
+          </div>
+    
+          <div id="knuffel4">
+            <div class="btns">
+              <button class="claimbtn" id="claim">Kies</button>
+            </div> 
+
+          </div>
+        </div>
+    
+      <script src="knuffelPopup.js"></script>
+</body>
+</html>

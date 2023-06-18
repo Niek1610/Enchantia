@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="overflow: hidden;" id="spel">
+
+    <div id="backbtn" onclick="history.back()"></div>
+  
+    <div class="scoreContent">
+      <h2 id="scoreText"> 0 / 30</h2>
+    </div>
+
+
+    <div id="fairybox">
+      <div id="fairyTarget"></div>
+    </div>
+
+
+    <div class="hearts">
+      <img src="bestanden/heart.png" alt="" id="heart1">
+      <img src="bestanden/heart.png" alt="" id="heart2">
+      <img src="bestanden/heart.png" alt="" id="heart3">
+    </div>
+  
+    <div class="popupDemo" id="popSpel">
+      <div class="popupcontentSpel" id="doneContent">
+        <h2 id="statusText">Gefeliciteerd!</h2>
+        <img id="fairystickerClaimed" src="bestanden/fairysticker.png" alt="">
+        <h3 id="scoreSpel">Score: x</h3>
+        <h3 id="bestscoreSpel">Beste score: x</h3>
+        <p id="statusZin">Je hebt de feeën verslagen! Je hebt een sticker ontgrendeld.</p>
+  
+        <div class="btns2">
+          <button id="spelopnieuw" onclick="restartGame()" >Opnieuw</button>
+          <button id="spelstop" onclick="homepage()">Stoppen</button>
+        </div>
+     
+      </div>
+    </div>
+
+    <nav>
+        <div id="kaart">
+          <a href=""></a
+          ><img src="bestanden/kaarticon.png" alt="" />Kaart
+        </div>
+        <div id="overnachten">
+          <a href=""></a
+          ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+        </div>
+        <div id="raadsel">
+          <a href="index.html"><img src="bestanden/raadselgrijs.png" alt="" /></a
+          >Vermaak
+        </div>
+        <div id="tickets">
+          <a href=""></a
+          ><img src="bestanden/ticketicon.png" alt="" />Tickets
+        </div>
+        <div id="Account">
+          <a href=""></a
+          ><img src="bestanden/meericon.png" alt="" />Account
+        </div>
+      </nav>
+
+    <script src="gameFinal.js"></script>
+</body>
+</html>

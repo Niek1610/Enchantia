@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<link
+href="//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine"
+rel="stylesheet"
+type="text/css"
+>
+<link href="https://fonts.googleapis.com/css?family=Leckerli One"
+rel="stylesheet"
+type="text/css">
+
+<title>Stickers pagina</title>
+<style>
+@import url(//db.onlinewebfonts.com/c/f640ba0a4e6a7ecded43140be7b68289?family=FF+Ernestine);
+
+@font-face {
+  font-family: "FF Ernestine";
+  src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot");
+  src: url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/f640ba0a4e6a7ecded43140be7b68289.svg#FF Ernestine")
+      format("svg");
+}
+
+body {
+  margin: auto;
+  padding: 0%;
+  background-color: #fafbf6;
+  height: 100vh;
+  width: 100vw;      
+}
+
+h1{
+  font-size: 28px;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ff0000;
+  color: #fafbf6;
+  font-size: 44px;
+  margin: 0px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(bestanden/stickersheaderfoto.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Leckerli One";
+  text-align: center;
+}
+
+
+.stickericon img {
+  width: 80px;
+  height: 80px;
+}
+
+
+
+
+.titelsenartikelen {
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+article {
+background-color: rgb(198, 198, 198);
+padding: 20px;
+text-align: center;
+border-radius: 10%;
+}
+
+.titelvanraadsels {
+  color: #000000;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Leckerli One";
+}
+
+nav {
+  
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #bfbfbf;
+  font-size: 12px;
+}
+
+nav img {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+}
+
+#backbtn {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+  background-image: url(bestanden/backbuttonpng.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.hiding{
+  visibility: hidden;
+}
+
+#invis{
+  height: 100px;
+  width: 100px;
+  background-color: #000000;
+  visibility: hidden;
+}
+
+body {
+  margin: auto;
+  padding: 0%;
+  background-color: #fafbf6;
+  height: 100vh;
+  width: 100vw;      
+}
+
+h1{
+  font-size: 28px;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ff0000;
+  color: #fafbf6;
+  font-size: 44px;
+  margin: 0px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(bestanden/stickersheaderfoto.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Leckerli One";
+  text-align: center;
+}
+
+
+.stickericon img {
+  width: 80px;
+  height: 80px;
+}
+
+.titelsenartikelen {
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+}
+
+article {
+background-color: rgb(198, 198, 198);
+padding: 20px;
+text-align: center;
+border-radius: 10%;
+}
+
+.titelvanraadsels {
+  color: #000000;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Leckerli One";
+}
+
+nav {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #bfbfbf;
+  font-size: 12px;
+}
+
+nav img {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+}
+
+#backbtn {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+  background-image: url(bestanden/backbuttonpng.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.hiding{
+  visibility: hidden;
+}
+
+#invis{
+  height: 100px;
+  width: 100px;
+  background-color: #000000;
+  visibility: hidden;
+}
+
+body {
+  margin: auto;
+  padding: 0%;
+  background-color: #fafbf6;
+  height: 100vh;
+  width: 100vw;      
+}
+
+h1{
+  font-size: 28px;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ff0000;
+  color: #fafbf6;
+  font-size: 44px;
+  margin: 0px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(bestanden/stickersheaderfoto.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Leckerli One";
+  text-align: center;
+}
+
+
+.stickericon img {
+  width: 80px;
+  height: 80px;
+}
+
+
+
+
+.titelsenartikelen {
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+
+article {
+background-color: rgb(198, 198, 198);
+padding: 20px;
+text-align: center;
+border-radius: 10%;
+}
+
+.titelvanraadsels {
+  color: #000000;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Leckerli One";
+}
+
+nav {
+  
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #bfbfbf;
+  font-size: 12px;
+}
+
+nav img {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+}
+
+#backbtn {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+  background-image: url(bestanden/backbuttonpng.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.hiding{
+  visibility: hidden;
+}
+
+#invis{
+  height: 100px;
+  width: 100px;
+  background-color: #000000;
+  visibility: hidden;
+}
+
+.swirllinks {
+  float: left;
+  width: 20%;
+  margin-top: 13%;
+  margin-left: 2.5%;
+}
+
+.swirlrechts{
+  float: right;
+  margin-top: -78px;
+  margin-right: 2.5%;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="container">  
+<div id="backbtn"  onclick="history.back()"></div>
+
+<div class="header">
+<div class="titelheader">Behaalde <br> Stickers</div>
+</div>
+
+
+
+<div class="titelvanraadsels">
+<h1>De Droomvlucht</h1>
+</div>
+
+<div class="swirllinks">
+  <img src="bestanden/swirl.png" alt="">
+</div>
+
+<div class="titelsenartikelen">
+
+<article id="droomvlucht">
+
+  <div class="stickericon" id="stickericon1">
+    <img id="fee" src="bestanden/stickerfeenietgehaald.png" alt="" >
+    </div>
+
+</article>
+</div>
+
+<div class="swirlrechts">
+  <img src="bestanden/swirl2.png" alt="">
+</div>
+
+
+<div class="titelvanraadsels">
+<h1>Joris & de Draak</h1>
+</div>
+
+<div class="swirllinks">
+  <img src="bestanden/swirl.png" alt="">
+</div>
+
+
+<div class="titelsenartikelen">
+<article id="droomvlucht">
+  <div class="stickericon" id="stickericon">
+    <img src="bestanden/sticker2.png" alt="" >
+  </div>
+</article>
+</div>
+
+<div class="swirlrechts">
+  <img src="bestanden/swirl2.png" alt="">
+</div>
+
+<div class="titelvanraadsels">
+<h1>Max & Moritz</h1>
+</div>
+
+<div class="swirllinks">
+  <img src="bestanden/swirl.png" alt="">
+</div>
+
+
+<div class="titelsenartikelen">
+<article id="fotovogel1">
+  <div class="stickericon" id="stickericon">
+    <img src="bestanden/sticker3.png" alt="" >
+  </div>
+</article>
+
+</div>
+
+<div class="swirlrechts">
+  <img src="bestanden/swirl2.png" alt="">
+</div>
+
+
+<div  class="titelvanraadsels">
+<h1>Baron 1898</h1>
+</div>
+
+<div class="swirllinks">
+  <img src="bestanden/swirl.png" alt="">
+</div>
+
+
+<div  id="tr3" class="titelsenartikelen">
+<article id="fotobaron1">
+  <div class="stickericon" id="stickericon">
+    <img src="bestanden/stickerfeenietgehaald.png" alt="" >
+  </div>
+</article>
+
+</div>
+
+<div class="swirlrechts">
+  <img src="bestanden/swirl2.png" alt="">
+</div>
+
+<nav>
+<div id="kaart">
+  <a href=""></a
+  ><img src="bestanden/kaarticon.png" alt="" />Kaart
+</div>
+<div id="overnachten">
+  <a href=""></a
+  ><img src="bestanden/overnachtingenicon.png" alt="" />Overnachten
+</div>
+<div id="raadsel">
+  <a href="index.html"><img src="bestanden/raadselgrijs.png" alt="" /></a
+  >Vermaak
+</div>
+<div id="tickets">
+  <a href=""></a
+  ><img src="bestanden/ticketicon.png" alt="" />Tickets
+</div>
+<div id="Account">
+  <a href=""></a
+  ><img src="bestanden/meericon.png" alt="" />Account
+</div>
+</nav></div>
+
+
+<div id="invis">
+
+  </div>
+
+<script src="main.js"></script>
+<script> 
+
+  let enoughPoints = localStorage.getItem("enoughPoints")
+  const fee = document.getElementById("fee")
+  if(enoughPoints === "1" ){
+   fee.src = "bestanden/fairysticker.png"
+  }
+  </script>
+</body>
+</html>
