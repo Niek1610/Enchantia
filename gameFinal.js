@@ -94,11 +94,15 @@ sticker = document.getElementById("fairystickerClaimed"),
 scoreSpel = document.getElementById("scoreSpel"),
 bestScoreSpel = document.getElementById("bestscoreSpel")
 
+let enoughPoints =  localStorage.getItem("enoughPoints") || 0
+
 function checkScore(){
   checkBestScore()
   scoreSpel.innerHTML = `Score: ${score}`
  
   if(score >= 30){
+    enoughPoints = 1
+    localStorage.setItem("enoughPoints", enoughPoints)
     statusText.innerHTML = "Gefeliciteerd"
    sticker.src = "bestanden/fairysticker.png";
    statusZin.innerHTML = "Je hebt de feeën verslagen! Je hebt een sticker ontgrendeld."
